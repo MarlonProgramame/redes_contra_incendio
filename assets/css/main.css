@@ -241,6 +241,7 @@ h6 {
   height: 65px;
   color: white;
   font-size: 35px;
+  transition: 0.3s;
 }
 /*--------------------------------------------------------------
 # Global Header
@@ -526,7 +527,7 @@ h6 {
   background-color: var(--background-color);
   font-size: 14px;
   text-align: center;
-  padding: 30px 0;
+  padding: 10px 0;
   position: relative;
 }
 
@@ -546,8 +547,10 @@ h6 {
 }
 
 .footer .social-links {
-  margin: 0 0 30px 0;
-  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 35% 20px 35%;
+  padding-top: 10px;
 }
 
 .footer .social-links a {
@@ -561,15 +564,16 @@ h6 {
   margin: 0 4px;
   border-radius: 25%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   transition: 0.3s;
 }
 
 .footer .social-links a:hover {
   background: color-mix(in srgb, var(--background-color), transparent 20%);
   text-decoration: none;
-  width: 40px;
+  width: 45px;
+  height: 45px;
 }
 
 .footer .copyright {
