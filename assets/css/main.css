@@ -2700,51 +2700,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
-#carouselExample {
-  width: 100%;
-  height: 500px; /* altura fija */
-  overflow: hidden;
-  position: relative;
-  margin: 0 auto;
-}
 
-#carouselExample .carousel-inner {
-  width: 10%;
-  height: 200%;
-}
-
-#carouselExample .carousel-item img {
-  width: 100%;
-  height: 800px;
-  object-fit: cover;
-}
-
-#carouselExample .carousel-control-prev,
-#carouselExample .carousel-control-next {
-  width: 1%;
-  filter: invert(1);
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-#carouselExample .carousel-control-prev:hover,
-#carouselExample .carousel-control-next:hover {
-  opacity: 1;
-}
-
-#carouselExample .carousel-control-prev-icon,
-#carouselExample .carousel-control-next-icon {
-  background-size: 2rem 2rem;
-}
-
-@media (max-width: 768px) {
-  #carouselExample {
-    height: 300px;
-  }
-  #carouselExample .carousel-item img {
-    height: 200px;
-  }
-}
 .product-card {
   text-align: center;
   padding: 20px;
