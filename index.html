@@ -41,14 +41,14 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/nuruenaLogo.png" width="100%" height="auto" alt="">
+        <img src="assets/img/nuruenaLogo.png" width="77%" height="auto" alt="">
         <!--<h1 class="sitename">Selecao</h1>-->
-      </a>
+      </a> 
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -65,7 +65,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- Botón flotante de WhatsApp a la izquierda -->
-    <a href="https://api.whatsapp.com/send/?phone=573108194951&text&type=phone_number&app_absent=0" 
+    <a href="https://api.whatsapp.com/send/?phone=573108194951&text&type=phone_number&app_absent=0"
       class="whatsapp-float" target="_blank" title="Escríbenos por WhatsApp">
       <i class="fa fa-whatsapp"></i>
     </a>
@@ -73,32 +73,36 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <div class="banner">
+    <div class="slides active" style="background-image: url('assets/img/baner_red_contra_incendio1.jpg');" onclick="window.location.href='https://wa.me/573108194951';">
+        <div class="text"></div>
+    </div>
+    <div class="slides" style="background-image: url('assets/img/banner-rci-1.jpg');" onclick="window.location.href='https://wa.me/telefono whatsapp';">
+        <div class="text"></div>
+    </div>
+    <div class="slides" style="background-image: url('assets/img/Banner-categorias-red-contra-incendio.png');" onclick="window.location.href='https://wa.me/telefono whatsapp';">
+        <div class="text"></div>
+    </div>
+    <div class="slides" style="background-image: url('assets/img/baner_red_contra_incendio.jpg');" onclick="window.location.href='https://wa.me/telefono whatsapp';">
+        <div class="text"></div>
+    </div>
+    <div class="slides" style="background-image: url('assets/img/baner_red_contra_incendio.jpg');" onclick="window.location.href='https://wa.me/telefono whatsapp';">
+        <div class="text"></div>
+    </div>
 
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img/" class="d-block w-100" alt="Imagen 1">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/" class="d-block w-100" alt="Imagen 2">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/" class="d-block w-100" alt="Imagen 3">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
 
-
+    <div class="dots">
+        <span class="active-dot" onclick="currentSlide(1)"></span>
+        <span onclick="currentSlide(2)"></span>
+        <span onclick="currentSlide(3)"></span>
+        <span onclick="currentSlide(4)"></span>
+        <span onclick="currentSlide(5)"></span>
+    </div>
+    </div>
+  
+    <section id="heros" class="hero section dark-background">
       <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28 " preserveAspectRatio="none">
         <defs>
@@ -116,35 +120,7 @@
       </svg>
 
     </section><!-- /Hero Section -->
-    <!--     <section>
-      <div class="container">
-        <div class="row">
-          <div class="column">
-            <img id="accesorioImg" src="assets/img/banner-nuruena-redes-contra-incendios-00.jpg" alt="accesorios red contra incendio">
-
-          </div>
-          <div class="column">
-            <img id="tuberiaImg" src="assets/img/banner-nuruena-redes-contra-incendios-01.jpg" alt="tuberia red contra incendio">
-
-          </div>
-        </div>        
-      </div>
-      <br>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col">            
-          </div>
-          <div class="col-2">
-            <a class="btn" href="https://www.redescontraincendio.com/tienda/shop/" role="button">Cotiza Aqui!</a>
-          </div>
-          <div class="col">            
-          </div>
-        </div>
-      </div>
-     
-
-    </section> -->
-    <!-- Portfolio Section -->
+    
     <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
@@ -162,7 +138,11 @@
             <li data-filter=".filter-app">Tuberia</li>
             <li data-filter=".filter-product">Accesorios</li>
             <li data-filter=".filter-branding">Válvulas</li>
-            <li><a href="https://www.redescontraincendio.com/tienda/shop/">Tienda</a></li>
+            <li class="enlace-tienda">
+              <a
+                href="https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio">Tienda</a>
+            </li>
+
 
           </ul><!-- End Portfolio Filters -->
 
@@ -172,9 +152,11 @@
               <div class="product-card">
                 <img src="assets/img/masonry-portfolio/Tubo Riber C900.jpg" class="img-fluid product-image"
                   alt="Tubo Rieber C900">
-                <p class="product-brand">CELTA</p>
-                <h4 class="product-name">Tubo Rieber C900</h4>
-                <button class="quote-button">Cotizar</button>
+                <h4 class="product-name">TUBO REIBER C 900 RDE18</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">
+                  Cotizar
+                </button>
               </div>
             </div>
 
@@ -184,9 +166,11 @@
               <div class="product-card">
                 <img src="assets/img/masonry-portfolio/Semicodo ranurado.jpg" class="img-fluid product-image"
                   alt="Semicodo Ranurado">
-                <p class="product-brand">....</p>
-                <h4 class="product-name">Semicodo Ranurado</h4>
-                <button class="quote-button">Cotizar</button>
+                <h4 class="product-name">SEMICODO RANURADO</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">
+                  Cotizar
+                </button>
               </div>
             </div>
 
@@ -195,159 +179,140 @@
               <div class="product-card">
                 <img src="assets/img/masonry-portfolio/Registro globo de 3 vías.jpg" class="img-fluid product-image"
                   alt="Registro Globo">
-                <p class="product-brand">....</p>
-                <h4 class="product-name">Registro globo 3 vías</h4>
-                <button class="quote-button">Cotizar</button>
+                <h4 class="product-name">REGISTRO GLOBO 3 VIAS</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">
+                  Cotizar
+                </button>
               </div>
             </div>
 
 
+            <!-- Producto 1 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/Tubo PE100 red contraincedios FM negra línea roja.jpg"
-                class="img-fluid" alt="Tubo PE100">
-              <div class="portfolio-info">
-                <h4>Tubo PE100</h4>
-                <p>Tubo PE100 red contraincedios FM negra línea roja </p>
-                <a href="assets/img/masonry-portfolio/Tubo PE100 red contraincedios FM negra línea roja.jpg"
-                  title="Tubo PE100" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="https://www.redescontraincendio.com/tienda/categoria-producto/tuberias" title="More Details"
-                  class="details-link"><i class="bi bi-cart"></i></a>
+              <div class="product-card">
+                <img src="assets/img/masonry-portfolio/Tubo PE100 red contraincedios FM negra línea roja.jpg"
+                  class="img-fluid product-image" alt="Tubo PE100">
+                <h4 class="product-name">TUBO PE100</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">
+                  Cotizar
+                </button>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+
+            <!-- Producto 2 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/Tee reducida ranurada.jpg" class="img-fluid"
-                alt="Tee reducida ranurada">
-              <div class="portfolio-info">
-                <h4>Tee reducida ranurada</h4>
-                <p>Tee reducida ranurada </p>
-                <a href="assets/img/masonry-portfolio/Tee reducida ranurada.jpg" title="Tee reducida ranurada"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="https://www.redescontraincendio.com/tienda/categoria-producto/accesorios/" title="More Details"
-                  class="details-link"><i class="bi bi-cart"></i></a>
+              <div class="product-card">
+                <img src="assets/img/masonry-portfolio/Tee reducida ranurada.jpg" class="img-fluid product-image"
+                  alt="Tee reducida ranurada">
+                <h4 class="product-name">TEE REDUCIDA RANURADA</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">
+                  Cotizar
+                </button>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+
+            <!-- Producto 3 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/Válvula cortina OS&Y ranurada.jpg" class="img-fluid"
-                alt="Válvula cortina OS&Y ranurada">
-              <div class="portfolio-info">
-                <h4> Válvula cortina OS&Y ranurada</h4>
-                <p>Válvula cortina OS&Y ranurada</p>
-                <a href="assets/img/masonry-portfolio/Válvula cortina OS&Y ranurada.jpg"
-                  title="Válvula cortina OS&Y ranurada" data-gallery="portfolio-gallery-branding"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.redescontraincendio.com/tienda/categoria-producto/valvulas/" title="More Details"
-                  class="details-link"><i class="bi bi-cart"></i></a>
+              <div class="product-card">
+                <img src="assets/img/masonry-portfolio/Válvula cortina OS&Y ranurada.jpg"
+                  class="img-fluid product-image" alt="Válvula cortina OS&Y ranurada">
+                <h4 class="product-name">VALVULA CORTINA OS&Y RANURADA</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">Cotizar</button>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+
+            <!-- Producto 4 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/Tubo SCH 10 roja.jpg" class="img-fluid" alt="Tubo SCH 10 roja">
-              <div class="portfolio-info">
-                <h4>Tubo SCH 10 roja </h4>
-                <p>Tubo SCH 10 roja </p>
-                <a href="assets/img/masonry-portfolio/Tubo SCH 10 roja.jpg" title="Tubo SCH 10 roja"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.redescontraincendio.com/tienda/categoria-producto/tuberias" title="More Details"
-                  class="details-link"><i class="bi bi-cart"></i></a>
+              <div class="product-card">
+                <img src="assets/img/masonry-portfolio/Tubo SCH 10 roja.jpg" class="img-fluid product-image"
+                  alt="Tubo SCH 10 roja">
+                <h4 class="product-name">TUBO SCH 10 ROJA</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">Cotizar</button>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+
+            <!-- Producto 5 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/Tapón ranurado.jpg" class="img-fluid" alt="Tapón ranurado">
-              <div class="portfolio-info">
-                <h4>Tapón ranurado </h4>
-                <p>Tapón ranurado </p>
-                <a href="assets/img/masonry-portfolio/Tapón ranurado.jpg" title="Tapón ranurado"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="https://www.redescontraincendio.com/tienda/categoria-producto/accesorios/" title="More Details"
-                  class="details-link"><i class="bi bi-cart"></i></a>
+              <div class="product-card">
+                <img src="assets/img/masonry-portfolio/Tapón ranurado.jpg" class="img-fluid product-image"
+                  alt="Tapón ranurado">
+                <h4 class="product-name">TAPON RANURADO</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">Cotizar</button>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+
+            <!-- Producto 6 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/Válvula mariposa HD supervisada.jpg" class="img-fluid"
-                alt="Válvula mariposa HD supervisada">
-              <div class="portfolio-info">
-                <h4> Válvula mariposa HD supervisada</h4>
-                <p>Válvula mariposa HD supervisada</p>
-                <a href="assets/img/masonry-portfolio/Válvula mariposa HD supervisada.jpg"
-                  title="Válvula mariposa HD supervisada" data-gallery="portfolio-gallery-branding"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.redescontraincendio.com/tienda/categoria-producto/valvulas/" title="More Details"
-                  class="details-link"><i class="bi bi-cart"></i></a>
+              <div class="product-card">
+                <img src="assets/img/masonry-portfolio/Válvula mariposa HD supervisada.jpg"
+                  class="img-fluid product-image" alt="Válvula mariposa HD supervisada">
+                <h4 class="product-name">VALVULA MARIPOSA HD SUPERVISADA</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">Cotizar</button>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+
+            <!-- Producto 7 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/Tubo SCH 40 roja.jpg" class="img-fluid" alt="Tubo SCH 40 roja">
-              <div class="portfolio-info">
-                <h4>Tubo SCH 40 roja </h4>
-                <p>Tubo SCH 40 roja </p>
-                <a href="assets/img/masonry-portfolio/Tubo SCH 40 roja.jpg" title="Tubo SCH 40 roja"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.redescontraincendio.com/tienda/categoria-producto/tuberias" title="More Details"
-                  class="details-link"><i class="bi bi-cart"></i></a>
+              <div class="product-card">
+                <img src="assets/img/masonry-portfolio/Tubo SCH 40 roja.jpg" class="img-fluid product-image"
+                  alt="Tubo SCH 40 roja">
+                <h4 class="product-name">TUBO SCH 40 ROJA</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">Cotizar</button>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+
+            <!-- Producto 8 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/Flanche - brida ranurada.jpg" class="img-fluid"
-                alt="Flanche - brida ranurada">
-              <div class="portfolio-info">
-                <h4>Flanche - brida ranurada </h4>
-                <p>Flanche - brida ranurada </p>
-                <a href="assets/img/masonry-portfolio/Flanche - brida ranurada.jpg" title="Flanche - brida ranurada"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="https://www.redescontraincendio.com/tienda/categoria-producto/accesorios/" title="More Details"
-                  class="details-link"><i class="bi bi-cart"></i></a>
+              <div class="product-card">
+                <img src="assets/img/masonry-portfolio/Flanche - brida ranurada.jpg" class="img-fluid product-image"
+                  alt="Flanche - brida ranurada">
+                <h4 class="product-name">FLANCHE - BRIDA RANURADA</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">Cotizar</button>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+
+            <!-- Producto 9 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/Cheque cortina HD ranurado.jpg" class="img-fluid"
-                alt="Cheque cortina HD ranurado">
-              <div class="portfolio-info">
-                <h4> Cheque cortina HD ranurado</h4>
-                <p>Cheque cortina HD ranurado</p>
-                <a href="assets/img/masonry-portfolio/Cheque cortina HD ranurado.jpg" title="Cheque cortina HD ranurado"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="https://www.redescontraincendio.com/tienda/categoria-producto/valvulas/" title="More Details"
-                  class="details-link"><i class="bi bi-cart"></i></a>
+              <div class="product-card">
+                <img src="assets/img/masonry-portfolio/Cheque cortina HD ranurado.jpg" class="img-fluid product-image"
+                  alt="Cheque cortina HD ranurado">
+                <h4 class="product-name">CHEQUE CORTINA HD RANURADO</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">Cotizar</button>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+
+            <!-- Producto 10 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/Derivación strap.jpg" class="img-fluid" alt="Derivación strap">
-              <div class="portfolio-info">
-                <h4>Derivación strap </h4>
-                <p>Derivación strap </p>
-                <a href="assets/img/masonry-portfolio/Derivación strap.jpg" title="Derivación strap"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="https://www.redescontraincendio.com/tienda/categoria-producto/accesorios/" title="More Details"
-                  class="details-link"><i class="bi bi-cart"></i></a>
+              <div class="product-card">
+                <img src="assets/img/masonry-portfolio/Derivación strap.jpg" class="img-fluid product-image"
+                  alt="Derivación strap">
+                <h4 class="product-name">DERIVACION STRAP</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">Cotizar</button>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+
+            <!-- Producto 11 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/Válvula de ventilación de aire UL FM de 175PSI.jpg"
-                class="img-fluid" alt="Válvula de ventilación de aire UL FM de 175PSI">
-              <div class="portfolio-info">
-                <h4> Válvula de ventilación de aire UL FM de 175PSI</h4>
-                <p>Válvula de ventilación de aire UL FM de 175PSI</p>
-                <a href="assets/img/masonry-portfolio/Válvula de ventilación de aire UL FM de 175PSI.jpg"
-                  title="Válvula de ventilación de aire UL FM de 175PSI" data-gallery="portfolio-gallery-branding"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.redescontraincendio.com/tienda/categoria-producto/valvulas/" title="More Details"
-                  class="details-link"><i class="bi bi-cart"></i></a>
+              <div class="product-card">
+                <img src="assets/img/masonry-portfolio/Válvula de ventilación de aire UL FM de 175PSI.jpg"
+                  class="img-fluid product-image" alt="Válvula de ventilación de aire UL FM de 175PSI">
+                <h4 class="product-name">VALVULA DE VENTILACION DE AIRE UL FM DE 175PSI</h4>
+                <button class="quote-button"
+                  onclick="window.location.href='https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio'">Cotizar</button>
               </div>
-            </div><!-- End Portfolio Item -->
-
-
-
-
-
-
-
+            </div>
           </div><!-- End Portfolio Container -->
-
         </div>
 
 
@@ -356,18 +321,15 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col">
-        </div>
-        <div class="col-2">
-          <a class="btn" href="https://www.redescontraincendio.com/tienda/shop/" role="button">Todos los productos</a>
-        </div>
-        <div class="col">
+        <div class="col text-center">
+          <a class="btn bs-danger"
+            href="https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio"
+            role="button">
+            Todos los productos
+          </a>
         </div>
       </div>
     </div>
-
-
-
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -448,11 +410,12 @@
             </a>
           </li>
           <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-              <i class="bi bi-box-seam"></i>
-              <h4 class="d-none d-lg-block">Accesorios</h4>
+            <a class="nav-link d-flex align-items-center gap-2" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+              <div class="icono3"></div>
+              <h4 class="d-none d-lg-block mb-0">Accesorios</h4>
             </a>
           </li>
+
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
               <div class="icono2"></div>
@@ -487,7 +450,8 @@
                 <p>
                   Conozca mas de nuestra linea de tuberia contra incendios
                 </p>
-                <a href="https://www.redescontraincendio.com/tienda/shop/" class="read-more"><span>Más
+                <a href="https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio"
+                  class="read-more"><span>Más
                     Productos</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
@@ -512,7 +476,8 @@
                 <p>
                   Conozca mas de nuestra linea de accesorios contra incendios
                 </p>
-                <a href="https://www.redescontraincendio.com/tienda/shop/" class="read-more"><span>Más
+                <a href="https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio"
+                  class="read-more"><span>Más
                     Productos</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
@@ -537,7 +502,8 @@
                 <p>
                   Conozca mas de nuestra linea de válvulas contra incendios
                 </p>
-                <a href="https://www.redescontraincendio.com/tienda/shop/" class="read-more"><span>Más
+                <a href="https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio"
+                  class="read-more"><span>Más
                     Productos</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
@@ -564,7 +530,8 @@
                 <p>
                   Conozca mas de nuestra linea de complementos y soporteria contra incendios
                 </p>
-                <a href="https://www.redescontraincendio.com/tienda/shop/" class="read-more"><span>Más
+                <a href="https://nuruena.com.co/categoria/productos/7-red-contra-incendio/104-red-contra-incendio"
+                  class="read-more"><span>Más
                     Productos</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
@@ -595,39 +562,52 @@
         <div class="row gy-4">
 
           <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
+
+            <!-- Punto de Venta -->
+            <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt-fill text-danger me-3 fs-4"></i>
               <div>
-                <h3>Punto de venta</h3>
-                <p>Cra. 25 N. 13 - 40 Paloquemao, Bogotá D.C.</p>
-              </div>
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Punto de distribucion</h3>
-                <p>Av Troncal de Occidente N. 18 - 07 Parque Industrial Santo Domingo, Bodega J2 Mosquera, Cundinamarca
+                <h4 class="fw-bold text-danger">PUNTO DE VENTA:</h4>
+                <p class="mb-1">Cra. 25 N.º 13 – 40, Paloquemao, Bogotá D.C.</p>
+                <p class="mb-0"><strong>Horario:</strong><br>
+                  Lunes a Viernes: 8:00 AM a 5:00 PM<br>
+                  Sábado: 8:00 AM a 12:00 PM
                 </p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
+            <!-- Centro de Distribución -->
+            <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="250">
+              <i class="bi bi-geo-alt-fill text-danger me-3 fs-4"></i>
               <div>
-                <h3>LLamenos</h3>
-                <p>390 6666 EXT 1013
-                  320 348 71 84</p>
+                <h4 class="fw-bold text-danger">CENTRO DE DISTRIBUCIÓN:</h4>
+                <p class="mb-0">Avenida Troncal de Occidente N. 18 – 76 Parque Industrial Santo Domingo, Bodega J2
+                  Mosquera, Cundinamarca.</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
+            <!-- Email -->
+            <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-envelope-fill text-danger me-3 fs-4"></i>
+              <div>
+                <h4 class="fw-bold">EMAIL:</h4>
+                <p class="mb-1">coordinador.servicio@nuruena.com.co</p>
+                <p class="mb-0">nuruena@nuruena.com.co</p>
+              </div>
+            </div>
+
+            <!-- Teléfonos -->
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
+              <i class="bi bi-telephone-fill text-danger me-3 fs-4"></i>
               <div>
-                <h3>Email</h3>
-                <p>asesor.mostrador3@nuruena.com.co
-                  nuruena@nuruena.com.co</p>
+                <h4 class="fw-bold">VENTAS:</h4>
+                <p class="mb-1">390 66 66 Opc. 1</p>
+                <p class="mb-0">310 819 4951</p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
           </div>
+
 
           <div class="col-lg-8">
             <iframe
@@ -669,7 +649,8 @@
               <img src="assets/img/linkedin.png" alt="">
             </a>
           </div>
-          <span>Copyright</span> <strong class="px-1 sitename">2025 Nurueña. Todos los derechos reservados.</strong> <span><br>Diseño y desarrollo por <strong>Nurueña</span>
+          <span>Copyright</span> <strong class="px-1 sitename">2025 Nurueña. Todos los derechos reservados.</strong>
+          <span><br>Diseño y desarrollo por <strong>Nurueña</span>
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
@@ -710,6 +691,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/banner.js" ></script>
 
 </body>
 
