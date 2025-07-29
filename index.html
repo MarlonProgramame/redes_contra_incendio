@@ -20,6 +20,7 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -48,7 +49,7 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/nuruenaLogo.png" width="77%" height="auto" alt="">
         <!--<h1 class="sitename">Selecao</h1>-->
-      </a> 
+      </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -71,58 +72,63 @@
     </a>
   </header>
 
+  <section id="carousel-section" class="py-0">
+    <div class="container-fluid px-0">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+            class="active"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/baner_red_contra_incendio1.jpg" class="d-block w-100 carousel-img" alt="Imagen 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/banner_red_contra_incendios2.jpg" class="d-block w-100 carousel-img" alt="Imagen 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/carrusel3.jpg" class="d-block w-100 carousel-img" alt="Imagen 3">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="heros" class="hero section dark-background mt-0 pt-0">
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3"></use>
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0"></use>
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9"></use>
+      </g>
+    </svg>
+  </section>
+
+
+
   <main class="main">
-
-    <div class="banner">
-    <div class="slides active" style="background-image: url('assets/img/baner_red_contra_incendio1.jpg');" onclick="window.location.href='https://wa.me/573108194951';">
-        <div class="text"></div>
-    </div>
-    <div class="slides" style="background-image: url('assets/img/banner-rci-1.jpg');" onclick="window.location.href='https://wa.me/telefono whatsapp';">
-        <div class="text"></div>
-    </div>
-    <div class="slides" style="background-image: url('assets/img/Banner-categorias-red-contra-incendio.png');" onclick="window.location.href='https://wa.me/telefono whatsapp';">
-        <div class="text"></div>
-    </div>
-    <div class="slides" style="background-image: url('assets/img/baner_red_contra_incendio.jpg');" onclick="window.location.href='https://wa.me/telefono whatsapp';">
-        <div class="text"></div>
-    </div>
-    <div class="slides" style="background-image: url('assets/img/baner_red_contra_incendio.jpg');" onclick="window.location.href='https://wa.me/telefono whatsapp';">
-        <div class="text"></div>
-    </div>
-
-    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-
-    <div class="dots">
-        <span class="active-dot" onclick="currentSlide(1)"></span>
-        <span onclick="currentSlide(2)"></span>
-        <span onclick="currentSlide(3)"></span>
-        <span onclick="currentSlide(4)"></span>
-        <span onclick="currentSlide(5)"></span>
-    </div>
-    </div>
-  
-    <section id="heros" class="hero section dark-background">
-      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28 " preserveAspectRatio="none">
-        <defs>
-          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-        </defs>
-        <g class="wave1">
-          <use xlink:href="#wave-path" x="50" y="3"></use>
-        </g>
-        <g class="wave2">
-          <use xlink:href="#wave-path" x="50" y="0"></use>
-        </g>
-        <g class="wave3">
-          <use xlink:href="#wave-path" x="50" y="9"></use>
-        </g>
-      </svg>
-
-    </section><!-- /Hero Section -->
-    
     <section id="portfolio" class="portfolio section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portafolio</h2>
@@ -557,7 +563,7 @@
         <p>Contactenos</p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade" data-aos-delay="100">
+      <div class="container1" data-aos="fade" data-aos-delay="100">
 
         <div class="row gy-4">
 
@@ -613,9 +619,12 @@
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9037589697386!2d-74.09005342636065!3d4.611244142429345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f997216f2ccc7%3A0x991c568608ef9247!2sNurue%C3%B1a%20S.A.S!5e0!3m2!1ses!2sco!4v1727451597295!5m2!1ses!2sco"
               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p><a href="https://www.google.com/maps/place/Nurue%C3%B1a+S.A.S/@4.6112441,-74.0900534,17z"
+                target="_blank">Ver en Google Maps</a></p>
+          </div>
 
-          </div><!-- End Contact Form -->
 
         </div>
 
@@ -671,6 +680,7 @@
 
 
   <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -691,7 +701,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/banner.js" ></script>
+  <script src="assets/js/banner.js"></script>
 
 </body>
 

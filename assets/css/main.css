@@ -21,7 +21,8 @@
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #000000; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #000000; /* Color for headings, subheadings and title throughout the website */
+  --heading-color: #000000;
+  --heading-color1: #ffffff; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #BA2B2C; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #000000; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #000000; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -809,8 +810,9 @@ section,
   flex-direction: column;
   justify-content: end;
   align-items: center;
-
+  margin-top: -60px;
 }
+  
 
 .hero .carousel-container {
   display: flex;
@@ -821,8 +823,8 @@ section,
   position: relative;
   min-height: 75vh;
   padding-top: 20px;
-}
 
+}
 .hero h2 {
   margin-bottom: 30px;
   font-size: 48px;
@@ -2787,7 +2789,7 @@ section,
 
 .quote-button:hover {
   background-color: #BA2B2C;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border-color: #BA2B2C;
 }
 
@@ -2819,20 +2821,20 @@ p {
 
 /* Hover: puedes mantener rojo o usar un tono diferente */
 .nav-tabs .nav-link:hover {
-  background-color: #BA2B2C;  /* Rojo más oscuro al pasar el cursor */
-  color: white;
+  background-color: #ffffff;  /* Rojo más oscuro al pasar el cursor */
+  color: rgb(255, 255, 255);
 }
 
 /* Tab activo (opcional: más oscuro para diferenciar) */
 .nav-tabs .nav-link.active {
-  background-color: #BA2B2C;  /* Rojo oscuro */
-  color: rgb(0, 0, 0);
+  background-color: #ffffff;  /* Rojo oscuro */
+  color: white;
 }
 .enlace-tienda a {
   display: inline-block;
   padding: 10px 20px;
   background-color: #BA2B2C; /* rojo oscuro */
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -2842,7 +2844,7 @@ p {
 .enlace-tienda a:hover {
   background-color: #BA2B2C; /* más oscuro al pasar el mouse */
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 .banner {
     position: relative;
@@ -2954,3 +2956,22 @@ p {
 .slides {
     animation: fade 6s infinite;
 }
+.container1 {
+  margin-left: auto;
+  margin-right: 0;
+  width: fit-content; /* o un ancho fijo como 300px */
+}
+/* Asegura que las imágenes mantengan proporción en todas las pantallas */
+.carousel-inner img {
+  width: 150%;
+  height: auto;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+/* Opcional: fondo oscuro para dar contraste */
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
