@@ -1250,7 +1250,7 @@ section,
 .enlace-tienda_cont_a{
   color: var(--default-color);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -1258,7 +1258,7 @@ section,
 .enlace-tienda_cont_a:hover{
   color: var(--heading-color1);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   transition: color 0.3s;
 }
