@@ -150,7 +150,7 @@ body {
   /* Ajusta el tamaño */
   height: 48px;
   /* Ajusta el tamaño */
-  background-image: url('../img/pipeline.png');
+  background-image: url('../img/pipeline.webp');
   background-size: contain;
   /* Para que la imagen se ajuste al div */
   background-repeat: no-repeat;
@@ -163,7 +163,7 @@ body {
   /* Ajusta el tamaño */
   height: 48px;
   /* Ajusta el tamaño */
-  background-image: url('../img/valve.png');
+  background-image: url('../img/valve.webp');
   background-size: contain;
   /* Para que la imagen se ajuste al div */
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ body {
   /* Ajusta el tamaño */
   height: 48px;
   /* Ajusta el tamaño */
-  background-image: url('../img/screw.png');
+  background-image: url('../img/screw.webp');
   background-size: contain;
   /* Para que la imagen se ajuste al div */
   background-repeat: no-repeat;
